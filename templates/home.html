@@ -1,23 +1,18 @@
-{% extends "base_mike.html" %}
-{#{% extends "base_elena.html" %}#}
+{#{% extends "base_mike.html" %}#}
+{% extends "base_elena.html" %}
+{% load static %}
 
 {% block content %}
 
-    PUT STUFF HERE...
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    AND HERE..
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    AND HERE...
-    <hr>
+    <img src="{% static 'images/HexaDissolve.png' %}" id="bg" alt="">
+
+    <div class="sidebar">
+        <h1>
+            <img src="{% static 'images/quantifylogo.png' %}" id="logo" alt="">
+        </h1>
+
+        <p id="sel">Tell us about your business</p>
+    </div>
+
 
 {% endblock %}

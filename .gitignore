@@ -1,3 +1,9 @@
 Quantify-master
 .DS_Store
 .idea
+*.pyc
+*__init__.py
+*admin.py
+*apps.py
+*tests.py
+*migrations

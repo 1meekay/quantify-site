@@ -6,37 +6,43 @@ input[type="number"] {
     -moz-appearance: textfield;
 }
 
+/*.sidebar{*/
+/*  position: relative;*/
+/*  margin: 0;*/
+/*  padding: 0;*/
+/*  text-align: justify;*/
+/*  background: linear-gradient(-45deg, #23A6D5, #23D5AB);*/
+/*  background-size: auto;*/
+/*  height: 100%;*/
+/*  !*width: 30%;*!*/
+/*  !*z-index: 1;*!*/
+/*  !*top: 0;*!*/
+/*  !*padding-top: 20px;*!*/
+/*  !*overflow-x: hidden;*!*/
+/*  !*margin-left: -30px;*!*/
+/*  */
+/*  display: grid;*/
+/*  display: -ms-grid;*/
+/*  float: left;*/
+/*  grid-template-rows: minmax(100px, auto) minmax(10vmax, 2fr);*/
+/*  -ms-grid-rows: minmax(100px, 1fr) minmax(10vmax, 2fr);*/
+/*}*/
+
 .sidebar{
-    position: relative;
-    margin: 0;
-    padding: 0;
+    position: fixed;
+    margin-left: -20px;
+    padding: 20px;
     text-align: justify;
     background: linear-gradient(-45deg, #23A6D5, #23D5AB);
     background-size: auto;
     height: 100%;
-    display: grid;
-    display: -ms-grid;
-    float: left;
-    grid-template-rows: minmax(100px, auto) minmax(10vmax, 2fr);
-    -ms-grid-rows: minmax(100px, 1fr) minmax(10vmax, 2fr);
+    width: 30%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px
 }
-
-/*.sidebar{*/
-/*    position: fixed;*/
-/*    margin-left: -20px;*/
-/*    padding: 20px;*/
-/*    text-align: justify;*/
-/*    background: linear-gradient(-45deg, #23A6D5, #23D5AB);*/
-/*    background-size: auto;*/
-/*    height: 100%;*/
-/*    width: 30%;*/
-/*    z-index: 1;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    overflow-x: hidden;*/
-/*    padding-top: 20px*/
-
-/*}*/
 
 .info,#form {
   background-color: #fff;
@@ -156,27 +162,27 @@ input[type=image]{
   width: 747px;
   }
 
-  #button1{
-    position: fixed;
-    height: 160px;
-    width: inherit;
-    margin-left: 227px;
-    margin-top: 260px;
-    z-index: 2;
-  }
-  #button2{
-    position: fixed;
-    height: 125px;
-    width: inherit;
-    margin-left: 232px;
-    margin-top: 380px;
-    z-index: 2;
-  }
-  #button3{
-    position: fixed;
-    height: 100px;
-    width: inherit;
-    margin-left: 252px;
-    margin-top: 490px;
-    z-index: 2;
-  }
+#button1{
+  position: fixed;
+  height: 160px;
+  width: inherit;
+  margin-left: 227px;
+  margin-top: 260px;
+  z-index: 2;
+}
+#button2{
+  position: fixed;
+  height: 125px;
+  width: inherit;
+  margin-left: 232px;
+  margin-top: 380px;
+  z-index: 2;
+}
+#button3{
+  position: fixed;
+  height: 100px;
+  width: inherit;
+  margin-left: 252px;
+  margin-top: 490px;
+  z-index: 2;
+}

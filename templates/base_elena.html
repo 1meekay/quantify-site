@@ -18,6 +18,7 @@
 
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 
+
         <!--Mike's Django style-->
         <link rel="stylesheet" id="ample-style-css" href="{% static 'qStyle.css' %}" type="text/css" media="all">
         <!--Mike's nav bar-->
@@ -37,29 +38,38 @@
         </div>
 
 
-        <img src="{% static 'images/HexaDissolve.png' %}" id="bg" alt="">
 
-        <div class="sidebar">
-            <h1>
-                <img src="{% static 'images/quantifylogo.png' %}" id="logo" alt="">
-            </h1>
+        {% block content %}
 
-            <br>
+        {% endblock %}
 
 
-            <p id="sel">
-                Tell us about your business
-            </p>
-            <img src="{% static 'images/button1.png' %}" id=button1 alt="tag1">
 
-            <br>
-            <p>Analysis</p>
-            <img src="{% static 'images/button2.png' %}" id=button2 alt="tag2">
-
-            <br>
-            <p>Grade</p>
-            <img src="{% static 'images/button3.png' %}" id=button3 alt="tag3">
-        </div>
+{#        <img src="{% static 'images/HexaDissolve.png' %}" id="bg" alt="">#}
+{##}
+{#        <div class="sidebar">#}
+{#            <h1>#}
+{#                <img src="{% static 'images/quantifylogo.png' %}" id="logo" alt="">#}
+{#            </h1>#}
+{##}
+{#            <br>#}
+{##}
+{#            <p id="sel">#}
+{#                Tell us about your business#}
+{#            </p>#}
+{##}
+{#            <img src="{% static 'images/button1.png' %}" id=button1 alt="tag1">#}
+{##}
+{#            <br>#}
+{##}
+{#            <p>Analysis</p>#}
+{#            <img src="{% static 'images/button2.png' %}" id=button2 alt="tag2">#}
+{##}
+{#            <br>#}
+{##}
+{#            <p>Grade</p>#}
+{#            <img src="{% static 'images/button3.png' %}" id=button3 alt="tag3">#}
+{#        </div>#}
 
     </body>
 </html>
