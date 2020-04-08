@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    {% if messages %}
+        {% for message in messages %}
+            <h4>{{ message }}</h4>
+            <hr>
+        {% endfor %}
+    {% endif %}
+
+
+    <hr>
+
+
+    {% for business in all_businesses %}
+        <p>
+            <a href="{% url 'individual_business' business.id %}">
+                {{ business.businessName }}
+            </a>
+        </p>
+    {% endfor %}
+
+
+
+    <h4>
+        <a href="{% url 'new_business' %}">
+            Add a new business here
+        </a>
+    </h4>
+
+
+
+{% endblock %}

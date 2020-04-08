@@ -1,0 +1,64 @@
+{% load static %}
+
+<html>
+    <head>
+        <title>Quantify</title>
+
+        <link href="{% static 'normalizeOG-fromPH.css' %}" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300" type="text/css" />
+
+        <!--Style.css-->
+        <link href="{% static 'styleOG-fromPH.css' %}" rel="stylesheet" type="text/css">
+
+        <!--Bootsrap.css-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!--Meta Description, For Search Engines-->
+        <meta name="Description" content="Business grade report">
+
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+
+
+        <link rel="stylesheet" id="ample-style-css" href="{% static 'qStyle.css' %}" type="text/css" media="all">
+        <link rel="stylesheet" href="{% static 'from-w3.css' %}">
+    </head>
+
+
+    <body>
+        <div class="w3-top w3-card w3-bar">
+
+            <a href="/" class="w3-bar-item w3-button">Home</a>
+
+            <!-- Right-sided navbar links -->
+            <div class="w3-right">
+                <a href="{% url 'all_businesses' %}" class="w3-bar-item w3-button">Businesses</a>
+            </div>
+        </div>
+
+
+        <img src="{% static 'images/HexaDissolve.png' %}" id="bg" alt="">
+
+        <div class="sidebar">
+            <h1>
+                <img src="{% static 'images/quantifylogo.png' %}" id="logo" alt="">
+            </h1>
+
+            <br>
+
+
+            <p id="sel">
+                Tell us about your business
+            </p>
+            <img src="{% static 'images/button1.png' %}" id=button1 alt="tag1">
+
+            <br>
+            <p>Analysis</p>
+            <img src="{% static 'images/button2.png' %}" id=button2 alt="tag2">
+
+            <br>
+            <p>Grade</p>
+            <img src="{% static 'images/button3.png' %}" id=button3 alt="tag3">
+        </div>
+
+    </body>
+</html>

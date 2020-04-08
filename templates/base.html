@@ -1,0 +1,89 @@
+{% load static %}
+
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>Quantify</title>
+
+        <link rel="stylesheet" id="ample-style-css" href="{% static 'qStyle.css' %}" type="text/css" media="all">
+        <link rel="stylesheet" href="{% static 'from-w3.css' %}">
+    </head>
+
+    <body class="wide">
+        <!-- Navbar (sits on top) -->
+        <div class="w3-top w3-card w3-bar">
+
+            <a href="/" class="w3-bar-item w3-button">Home</a>
+
+            <!-- Right-sided navbar links -->
+            <div class="w3-right">
+                <a href="{% url 'all_businesses' %}" class="w3-bar-item w3-button">Businesses</a>
+            </div>
+        </div>
+        <!-- END OF W3 STUFF -->
+
+        <div id="page">
+            <header>
+                <div class="header"> <!-- only for gray space between header and body -->
+                    <div class="main-head-wrap inner-wrap clearfix">
+
+                        <hr>
+
+                        <div id="header-text">
+
+                            {% ifequal request.path '/' %}
+                                <h3>
+                                    Quantify
+                                </h3>
+                            {% endifequal %}
+
+                            {% ifequal request.path '/business/' %}
+                                <h3>
+                                    Businesses
+                                </h3>
+                            {% endifequal %}
+
+<!--{#                            <p id="site-title">#}-->
+<!--{#                                <a href="/" title="Home title" rel="home">Meekay's World</a>#}-->
+<!--{#                            </p>#}-->
+
+                            <p>Helping businesses make better use of their data</p>
+                        </div>
+                    </div>
+
+                    <!-- Pic that replaced the dogs -->
+<!--{#                    <img src="{% static 'images/ny_pier_cut_short.jpg' %}" alt="pier">#}-->
+
+                </div>
+
+            </header>
+
+            <div class="main-wrapper single-page clearfix inner-wrap">
+
+<!--{#                <p>Welcome to the site.. bunch of text.. blah blah blah</p>#}-->
+<!--{#                <hr>#}-->
+<!---->
+<!--{#                <div>#}-->
+                {% block content %}
+
+                {% endblock %}
+<!--{#                </div>#}-->
+            </div>
+
+
+            <footer id="colophon">
+                <div class="inner-wrap">
+<!--                    <a href="https://meekaysite.herokuapp.com/" class="w3-bar-item w3-button">Production</a>-->
+                    <a href="http://127.0.0.1:8000/" class="w3-bar-item w3-button">Development</a>
+                </div>
+            </footer>
+
+        </div>
+        <!-- End of page -->
+
+
+    <script src="{% static 'hovering.js' %}"></script>
+
+    </body>
+
+</html>
